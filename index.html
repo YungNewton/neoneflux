@@ -5,20 +5,19 @@
   <title>neoneflux</title>
   <style>
     @font-face {
-    font-family: 'square_dot_digital-7regular';
-    src: url('square-dot-digital-7.regular-webfont.woff2') format('woff2'),
-         url('square-dot-digital-7.regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+        font-family: 'square_dot_digital-7regular';
+        src: url(fonts/square-dot-digital-7/square_dot_digital-7.ttf);
+        font-weight: normal;
+        font-style: normal;
 
-}
+    }
 
     body {
       margin: 0;
       padding: 0;
       overflow: hidden;
       -webkit-font-smoothing: antialiased; /* Adjust font rendering for better clarity on iOS */
-      font-family: "Square Dot Digital-7", monospace, Arial, sans-serif; /* Fallback font stack */
+      font-family: 'square_dot_digital-7regular', monospace, Arial, sans-serif; /* Fallback font stack */
     }
 
     #photo-container {
@@ -59,7 +58,7 @@
       right: 20px;
       font-size: 3vw; /* Adjusted to be relative to screen size */
       color: #eb1d25;
-      font-family: "Square Dot Digital-7", monospace;
+      font-family: 'square_dot_digital-7regular', monospace;
     }
     @media only screen and (max-width: 375px) {
       body {
