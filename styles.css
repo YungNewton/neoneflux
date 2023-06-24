@@ -5,6 +5,7 @@
     font-style: normal;
 
 }
+/* ---------------------------------------------------------------------------------------------------------------------- */
 #MusicBody{
     margin: 0;
     padding: 0;
@@ -71,13 +72,14 @@
     overflow: hidden;
 }
 /* ---------------------------------------------------------------------------------------------------------------------- */
-.index {
+#HomeBody {
     margin: 0;
     padding: 0;
     overflow: hidden;
     -webkit-font-smoothing: antialiased; /* Adjust font rendering for better clarity on iOS */
     font-family: 'square_dot_digital-7regular', monospace, Arial, sans-serif; /* Fallback font stack */
 }
+
 #photo-container {
     position: fixed;
     top: 0;
@@ -101,6 +103,15 @@
     animation: spin 6s linear infinite;
 }
 
+@keyframes spin {
+     0% {
+       transform: translate(-50%, -50%) rotateY(0deg);
+     }
+     100% {
+       transform: translate(-50%, -50%) rotateY(360deg);
+     }
+}
+
 #countdown {
     position: fixed;
     bottom: 20px;
@@ -108,7 +119,16 @@
     font-size: 3vw; /* Adjusted to be relative to screen size */
     color: #eb1d25;
     font-family: 'square_dot_digital-7regular', monospace;
-  }
+}
+@media only screen and (max-width: 375px) {
+    #HomeBody{
+      font-size: 14px;
+    }
+    #countdown {
+      font-size: 18px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Square+Dot+Digital-7&display=swap');
 
 /*------------------------------------------------------------------------------------------------------------------- */
 .music {
